@@ -1,50 +1,50 @@
-# API CRUD de Animais de Estimação 🐾
+# Pet CRUD API 🐾
 
-Este é um exemplo de aplicação CRUD (Create, Read, Update, Delete) desenvolvido em Python utilizando o framework Flask. A API permite gerenciar informações de animais de estimação, como adicionar, listar, atualizar e excluir dados.
+This is a sample CRUD (Create, Read, Update, Delete) application developed in Python using the Flask framework. The API allows managing pet information, such as adding, listing, updating, and deleting data.
 
-## Funcionalidades 🚀
+## Features 🚀
 
-- **Adicionar um animal de estimação:** Adicione novos pets ao sistema.
-- **Listar todos os animais:** Obtenha uma lista completa dos pets cadastrados.
-- **Atualizar informações de um animal:** Atualize dados de um pet específico pelo ID.
-- **Excluir um animal:** Remova um pet do sistema utilizando seu ID.
+- **Add a Pet:** Add new pets to the system.  
+- **List All Pets:** Get a complete list of registered pets.  
+- **Update Pet Information:** Update data for a specific pet by ID.  
+- **Delete a Pet:** Remove a pet from the system using its ID.  
 
-## Tecnologias Utilizadas 🛠️
+## Technologies Used 🛠️
 
-- **Python** - Linguagem de programação principal.
-- **Flask** - Framework para construção da API.
-- **JSON** - Para troca de dados entre cliente e servidor.
+- **Python** - Main programming language.  
+- **Flask** - Framework for building the API.  
+- **JSON** - For data exchange between client and server.  
 
-## Como Rodar o Projeto 🖥️
+## How to Run the Project 🖥️
 
-1. **Clone o repositório:**
-  ```bash<br/>
+1. **Clone the repository:**  
+  ```bash
   git clone https://github.com/dgirotto0/api-crud-python.git
   ```
-2. Acesse o diretório do projeto:
+2. Access the project directory:
   ```bash<br/>
   cd api-crud-python
   ```
-3. Instale as dependências necessárias: Certifique-se de ter o Flask instalado. Caso contrário, instale com o comando:
+3. Install the required dependencies: Make sure Flask is installed. If not, install it with:
   ```bash<br/>
   pip install flask
   ```
-4. Inicie a aplicação:
+4. Start the application:
   ```bash<br/>
   python pet.py
   ```
-Acesse a API no navegador ou em ferramentas como Postman:
+Access the API via browser or tools like Postman:
     
     http://127.0.0.1:5000
 
-## Endpoints da API 🛣️
+## API Endpoints 🛣️
 
-#### Adicionar um Pet
+### Add a Pet
 
-   - **Rota**: ```/adicionar_pet<br/>
-   - **Método**: POST<br/>
-   - **Descrição**: Adiciona um novo animal de estimação.<br/>
-   - **Exemplo de JSON**:<br/>
+  - Route: `/adicionar_pet`
+  - Method: POST
+  - Description: Adds a new pet.
+  - JSON Example:
   ```json
     {
       "nome": "Rex",
@@ -53,18 +53,18 @@ Acesse a API no navegador ou em ferramentas como Postman:
     }
   ```
 
-#### Listar Pets
+### List Pets
 
-  - **Rota**: ```/listar_pets```<br/>
-  - **Método**: GET<br/>
-  - **Descrição**: Retorna todos os animais cadastrados.<br/>
+  - **Route**: `/listar_pets`<br/>
+  - **Method**: GET<br/>
+  - **Description**: Returns all registered pets.
 
-#### Atualizar um Pet
+### Uptade a Pet
 
-  - **Rota**: ```/atualizar_pet/<id>```<br/>
-  - **Método**: PUT<br/>
-  - **Descrição**: Atualiza as informações de um pet específico.<br/>
-  - **Exemplo de JSON**:<br/>
+  - **Route**: `/atualizar_pet/<id>`<br/>
+  - **Method**: PUT<br/>
+  - **Description**: Updates information for a specific pet.
+  - **JSON Example**:<br/>
 ```json
     {
       "nome": "Rex",
@@ -72,16 +72,16 @@ Acesse a API no navegador ou em ferramentas como Postman:
       "idade": 4
     }
 ```
-#### Excluir um Pet
+### Delete a Pet
 
-  - **Rota**: ```/excluir_pet/<id>```<br/>
-  - **Método**: DELETE<br/>
-  - **Descrição**: Remove um animal de estimação pelo ID.
+  - **Route**: `/excluir_pet/<id>`<br/>
+  - **Method**: DELETE<br/>
+  - **Description**: Removes a pet by ID.
 
-## Estrutura do Código 🗂️
+## Code Structure 🗂️
 
-O código é simples e organizado em uma única classe, contendo as rotas da API. Ele utiliza uma lista em memória para armazenar os dados, ideal para fins de demonstração.
+The code is simple and organized in a single class containing the API routes. It uses an in-memory list to store data, ideal for demonstration purposes.
 
-## Licença 📜
+## Lisense 📜
 
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+This project is licensed under the MIT License. See the LICENSE file for more details.
